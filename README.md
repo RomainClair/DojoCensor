@@ -3,6 +3,7 @@
 ## Objectifs
 
 - Travailler avec les chaînes de caractères
+- Créer une méthode de classe
 
 ## Consignes
 
