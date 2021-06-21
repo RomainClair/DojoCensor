@@ -4,7 +4,7 @@ namespace wcs;
 
 class Censor
 {
-    public static function censor(string $sentence, string $forbidden) : string
+    public static function censor(string $sentence, string $forbidden): string
     {
         $sentenceLength = \mb_strlen($sentence);
         $forbiddenLength = \mb_strlen($forbidden);
