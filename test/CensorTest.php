@@ -16,7 +16,7 @@ class CensorTest extends TestCase
      * @depends testCensorExists
      * @dataProvider sentenceProvider
      */
-    public function testEmptySentence(string $expected, string $toCensor, string $forbiddenWord, string $message)
+    public function testCensor(string $expected, string $toCensor, string $forbiddenWord, string $message)
     {
         $this->assertSame($expected, Censor::censor($toCensor, $forbiddenWord), $message);
     }
