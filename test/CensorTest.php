@@ -49,8 +49,10 @@ class CensorTest extends TestCase
             ],
             ["W*** and w***", "Word and word", "Word", "Censoring Word in 'Word and word' must return 'W*** and w***'"],
             ["W*** and w***", "Word and word", "word", "Censoring word in 'Word and word' must return 'W*** and w***'"],
-            
-           
+            ["Back in b****", "Back in black", "Black", "Censoring Black in Back in black must return Back in b****"],
+            ["B*** in black", "Back in black", "Back", "Censoring Back in Back in black must return B*** in black"],
+            ["Back in b****", "Back in black", "black", "Censoring black in Back in black must return Back in b****"],
+            ["B*** in black", "Back in black", "back", "Censoring back in Back in black must return B*** in black"],
         ];
     }
 }
